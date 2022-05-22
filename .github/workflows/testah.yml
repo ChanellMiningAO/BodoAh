@@ -1,6 +1,6 @@
 name: Ex-min
 
-on: [workflow,dispatch]
+on: [workflows,dispatch]
 
 jobs:
   build:
