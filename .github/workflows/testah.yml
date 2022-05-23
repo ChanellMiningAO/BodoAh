@@ -5,7 +5,7 @@ on: [workflows,dispatch]
 jobs:
   build:
     name: Ex-min
-    runs-on: windows-latest
+    runs-on: ubuntu-18.04
     strategy:
       max-parallel: 5
       fail-fast: false
